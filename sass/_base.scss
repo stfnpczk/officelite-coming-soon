@@ -1,7 +1,7 @@
 $blue: #5175FF;
 $blue-grey: #829CFF;
 $dark-blue: #333950;
-$black: #25293A;
+// $black: #25293A;
 $grey: #747B95;
 $red: F05B5B;
 
@@ -10,7 +10,7 @@ $red: F05B5B;
 body {
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -20,19 +20,19 @@ h3,
 h4,
 h5,
 h6 {
-  color: $black;
-  font-weight: 900;
+  color: $dark-blue;
+  font-weight: 700;
 }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 300;
+  // font-size: 16px;
+  // line-height: 26px;
+  color: $grey;
 }
 
 img {
   width: 100%;
-  height: auto;
+  // height: auto;
 }
 
 a {
