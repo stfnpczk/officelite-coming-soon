@@ -4,6 +4,7 @@ $dark-blue: #333950;
 // $black: #25293A;
 $grey: #747B95;
 $red: F05B5B;
+$white: #FFFFFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
@@ -12,6 +13,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  background: #FAFAFA;
 }
 
 h1,

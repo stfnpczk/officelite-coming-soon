@@ -43,16 +43,94 @@ main {
   }
 
   &__button {
+    background: #5175ff;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 
-    
-
+    color: $white;
+    margin: 24px 0 100px;
   }
 }
 
 /*----------------------------
-      ??? section
+      cta section
 ----------------------------*/
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
 
+  &__basic {
+    background: $white;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  }
+
+  &__pro {
+    background: #5175ff;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  }
+
+
+  &__ultimate {
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__heading--white {
+    color: white; //replace color:white w mutual class
+  }
+
+  &__price {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: $dark-blue;
+    margin: 40px 0 8px;
+  }
+
+  &__price--white {
+    color: white;
+  }
+
+  &__per-user {
+    font-size: 16px;
+    line-height: 28px;
+    color: $dark-blue;
+  }
+
+  &__per-user--white {
+    color: white;
+  }
+
+  &__features {
+    color: #747b95;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 56px 0 32px;
+  }
+
+  &__features--white {
+    color: white;
+  }
+
+  &__feature--two {
+    margin: 16px 0;
+  }
+
+  &__button {
+    color: #5175ff;
+    background-color: rgba(81, 117, 255, 0.15);
+  }
+
+  &__button--white {
+    background-color: white;
+  }
+}
 /*----------------------------
       footer section 
 ----------------------------*/
