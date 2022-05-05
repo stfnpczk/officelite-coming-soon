@@ -81,9 +81,9 @@ main {
     line-height: 28px;
   }
 
-  &__heading--white {
-    color: white; //replace color:white w mutual class
-  }
+  // &__heading--white {
+  //   color: white; //replace color:white w mutual class
+  // }
 
   &__price {
     font-size: 56px;
@@ -93,9 +93,9 @@ main {
     margin: 40px 0 8px;
   }
 
-  &__price--white {
-    color: white;
-  }
+  // &__price--white {
+  //   color: white;
+  // }
 
   &__per-user {
     font-size: 16px;
@@ -103,9 +103,9 @@ main {
     color: $dark-blue;
   }
 
-  &__per-user--white {
-    color: white;
-  }
+  // &__per-user--white {
+  //   color: white;
+  // }
 
   &__features {
     color: #747b95;
@@ -114,9 +114,9 @@ main {
     margin: 56px 0 32px;
   }
 
-  &__features--white {
-    color: white;
-  }
+  // &__features--white {
+  //   color: white;
+  // }
 
   &__feature--two {
     margin: 16px 0;
