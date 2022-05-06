@@ -19,6 +19,7 @@
       <header class="header">
         <img class="header__logo" src="./assets/shared/logo.svg" alt="" />
       </header>
+
       <main>
         <section class="hero">
           <div class="hero__image">
@@ -54,7 +55,7 @@
 
           <div class="card cta__pro">
             <div class="cta__pricing">
-              <h2 class="cta__heading  color-white">Pro</h2>
+              <h2 class="cta__heading color-white">Pro</h2>
               <p class="cta__price color-white">$9.99</p>
               <p class="cta__per-user color-white">Per user, billed monthly</p>
             </div>
@@ -63,7 +64,9 @@
               <li class="cta__feature--two">50 gb storage</li>
               <li>More control and insights</li>
             </ul>
-            <a class="button cta__button cta__button--white" href="#"> Try for Free</a>
+            <a class="button cta__button cta__button--white" href="#">
+              Try for Free</a
+            >
           </div>
 
           <div class="card cta__ultimate">
@@ -79,12 +82,33 @@
             </ul>
             <a class="button cta__button" href="#"> Try for Free</a>
           </div>
-
-
         </section>
-        <section></section>
       </main>
-      <footer></footer>
+
+      <footer class="footer">
+        <div class="footer__countdown">
+          <h3 class="footer__heading">Coming <span> 4 Nov 2020</span></h3>
+          <ul class="footer__timer-boxes">
+            <li class="footer__timer">
+              <span class="footer__cd-time">47</span>
+              <span class="footer__cd-label">days</span>
+            </li>
+            <li class="footer__timer">
+              <span class="footer__cd-time">07</span>
+              <span class="footer__cd-label">hours</span>
+            </li>
+            <li class="footer__timer">
+              <span class="footer__cd-time">56</span>
+              <span class="footer__cd-label">min</span>
+            </li>
+            <li class="footer__timer">
+              <span class="footer__cd-time">14</span>
+              <span class="footer__cd-label">sec</span>
+            </li>
+          </ul>
+        </div>
+        <a class="button footer__button" href="#">Get Started</a>
+      </footer>
     </div>
   </body>
 </html>
