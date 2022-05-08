@@ -1,7 +1,7 @@
 /*----------------------------
       layout
  ----------------------------*/
-main {
+ main {
   padding: 0 24px;
 }
 /*----------------------------
@@ -15,6 +15,19 @@ main {
   &__logo {
     width: unset;
   }
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 288px;
+  background: url(../assets/home/bg-pattern-header.svg) no-repeat;
+  background-size: 458px;
+  background-position: center top -170px;
+  z-index: -1;
 }
 
 /*----------------------------
@@ -66,7 +79,8 @@ main {
   }
 
   &__pro {
-    background: #5175ff;
+    background: url(../assets/home/bg-pattern-pricing.svg) no-repeat #5175ff;
+    background-position: center top -379px;
     box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   }
 
@@ -81,10 +95,6 @@ main {
     line-height: 28px;
   }
 
-  // &__heading--white {
-  //   color: white; //replace color:white w mutual class
-  // }
-
   &__price {
     font-size: 56px;
     font-weight: 700;
@@ -93,19 +103,11 @@ main {
     margin: 40px 0 8px;
   }
 
-  // &__price--white {
-  //   color: white;
-  // }
-
   &__per-user {
     font-size: 16px;
     line-height: 28px;
     color: $dark-blue;
   }
-
-  // &__per-user--white {
-  //   color: white;
-  // }
 
   &__features {
     color: #747b95;
@@ -113,10 +115,6 @@ main {
     line-height: 28px;
     margin: 56px 0 32px;
   }
-
-  // &__features--white {
-  //   color: white;
-  // }
 
   &__feature--two {
     margin: 16px 0;
@@ -164,7 +162,6 @@ main {
   &__timer {
     display: flex;
     flex-direction: column;
-    // gap: 16px;
     align-items: center;
     color: $white;
     width: clamp(72px, 19.2vw, 19.2vw);
@@ -199,6 +196,8 @@ main {
   left: 0;
   right: 0;
   height: 1248px;
-  background-color: #25293A;
+  background: url(../assets/home/bg-pattern-footer.svg) no-repeat #25293a;
+  background-position: center top 139px;
+  background-size: cover;
   z-index: -1;
 }
