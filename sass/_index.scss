@@ -10,10 +10,14 @@
 .header {
   display: flex;
   justify-content: center;
-  margin: 46px 0 80px;
+  margin: 72px 0 104px 39px;
 
   &__logo {
     width: unset;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    justify-content: flex-start;
   }
 }
 
@@ -28,6 +32,12 @@
   background-size: 458px;
   background-position: center top -170px;
   z-index: -1;
+
+  @media only screen and (min-width: $tablet) {
+    background-size: 666px;
+    background-position: top -164px right -293px;
+    height: 502px;
+  }
 }
 
 /*----------------------------
