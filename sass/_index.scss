@@ -142,6 +142,10 @@
     line-height: 64px;
     color: $dark-blue;
     margin: 40px 0 8px;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 10px 0 0;
+    }
   }
 
   &__per-user {
@@ -155,6 +159,10 @@
     font-size: 16px;
     line-height: 28px;
     margin: 56px 0 32px;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 44px 0 0;
+    }
   }
 
   &__feature--two {
