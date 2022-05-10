@@ -101,8 +101,6 @@
       margin: 24px 0 140px;
     }
   }
-
-  
 }
 
 /*----------------------------
@@ -196,6 +194,7 @@
     letter-spacing: 5px;
     text-align: center;
     color: $white;
+    text-transform: uppercase;
   }
 
   &__heading span {
@@ -219,17 +218,31 @@
     background: $dark-blue;
     border-radius: 4px;
     padding: 8px 0;
+
+    @media only screen and (min-width: $tablet) {
+      width: clamp(100px, 13.0208333333vw, 13.020833333vw);
+      gap: 6px;
+      padding: 23px 0;
+    }
   }
 
   &__cd-time {
     font-size: 32px;
     line-height: 48px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 56px;
+    }
   }
 
   &__cd-label {
     font-size: 12px;
     line-height: 28px;
     opacity: 0.5;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__button {
