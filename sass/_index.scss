@@ -1,7 +1,7 @@
 /*----------------------------
       layout
  ----------------------------*/
-main {
+ main {
   padding: 0 24px;
 
   @media only screen and (min-width: $tablet) {
@@ -24,6 +24,10 @@ main {
 
   &__logo {
     width: unset;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin: 81px 165px 174px;
   }
 }
 
