@@ -7,6 +7,10 @@
   @media only screen and (min-width: $tablet) {
     padding: 0 40px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    padding: 0 165px;
+  }
 }
 /*----------------------------
       header section
@@ -27,7 +31,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 81px 165px 174px;
+    margin: 81px 165px 102px;
   }
 }
 
@@ -73,6 +77,11 @@
       width: clamp(281px, 36.5885416667vw, 36.5885416667vw);
       margin: 20px 0 0;
     }
+
+    @media only screen and (min-width: $desktop) {
+      width: clamp(526px, 36.5277777778vw, 36.5277777778vw);
+      margin: 0;
+    }
   }
 
   &__heading {
@@ -84,11 +93,22 @@
     @media only screen and (min-width: $tablet) {
       margin: 0 0 24px;
     }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 56px;
+      line-height: 64px;
+      margin: 72px 0 24px;
+    }
   }
 
   &__paragraph {
     font-size: 16px;
     line-height: 26px;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__button {
