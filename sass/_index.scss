@@ -92,9 +92,9 @@
   }
 
   &__heading {
-    font-family: Kumbh Sans;
-    font-size: 40px;
-    line-height: 48px;
+    // font-family: Kumbh Sans;
+    // font-size: 40px;
+    // line-height: 48px;
     margin: 64px 0 24px;
 
     @media only screen and (min-width: $tablet) {
@@ -102,8 +102,8 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 56px;
-      line-height: 64px;
+      // font-size: 56px;
+      // line-height: 64px;
       margin: 72px 0 24px;
     }
   }
@@ -194,8 +194,8 @@
   }
 
   &__per-user {
-    font-size: 16px;
-    line-height: 28px;
+    // font-size: 16px;
+    // line-height: 28px;
     color: $dark-blue;
   }
 
@@ -249,22 +249,22 @@
   }
 
   &__heading {
-    font-family: Kumbh Sans;
-    font-size: 16px;
-    line-height: 48px;
-    letter-spacing: 5px;
-    text-align: center;
+    // font-family: Kumbh Sans;
+    // font-size: 16px;
+    // line-height: 48px;
+    // letter-spacing: 5px;
+    // text-align: center;
+    // text-transform: uppercase;
+    
     color: $white;
-    text-transform: uppercase;
-
-    @media only screen and (min-width: $desktop) {
-      text-align: left;
-    }
+    // @media only screen and (min-width: $desktop) {
+    //   text-align: left;
+    // }
   }
 
-  &__heading span {
-    color: $blue;
-  }
+  // &__heading span {
+  //   color: $blue;
+  // }
 
   &__timer-boxes {
     display: flex;

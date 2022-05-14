@@ -39,11 +39,25 @@
     padding: 40px 0;
     text-align: center;
     justify-items: center;
-
-    
   }
 }
 
 .color-white {
   color: $white;
+}
+
+.heading-countdown {
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+  // color: $white;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.heading-countdown span {
+  color: $blue;
 }

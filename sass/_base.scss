@@ -1,19 +1,22 @@
-$blue: #5175FF;
-$blue-grey: #829CFF;
+$blue: #5175ff;
+$blue-grey: #829cff;
 $dark-blue: #333950;
 // $black: #25293A;
-$grey: #747B95;
-$red: #F05B5B;
-$white: #FFFFFF;
+$grey: #747b95;
+$red: #f05b5b;
+$white: #ffffff;
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$tablet: 768px;
+$desktop: 1024px;
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 body {
   min-height: 100vh;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 h1,
@@ -26,9 +29,19 @@ h6 {
   font-weight: 700;
 }
 
+.heading-one {
+  font-size: 40px;
+  line-height: 48px;
+
+  @media only screen and (min-width: $desktop) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
 p {
-  // font-size: 16px;
-  // line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
   color: $grey;
 }
 
@@ -42,6 +55,3 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
-$tablet: 768px;
-$desktop: 1024px;
