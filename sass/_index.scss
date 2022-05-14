@@ -52,6 +52,11 @@
     background-position: top -164px right -293px;
     height: 502px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    background-size: 1134px;
+    background-position: top -419px right -350px;
+  }
 }
 
 /*----------------------------
@@ -153,6 +158,11 @@
     @media only screen and (min-width: $tablet) {
       background-position: left -319px top -282px;
       background-size: 880px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-position: center top -379px;
+      
     }
   }
 
@@ -331,5 +341,7 @@
 
   @media only screen and (min-width: $desktop) {
     height: 603px;
+    background-size: 2036px;
+    background-position: right 111px top -623px;
   }
 }
