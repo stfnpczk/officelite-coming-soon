@@ -10,7 +10,18 @@
     &__heading {
         color: $dark-blue ;
     }
-
     
 
+    &__timer--light {
+        background-color: $blue;
+        background-color: rgba(#5175FF, 0.1);
+    }
+
+    &__time {
+        color: $blue;
+    }
+
+    &__label {
+        color: $dark-blue;
+    }
 }

@@ -23,7 +23,7 @@
 .card {
   border-radius: 13px;
   padding: 40px 0;
-
+  
   @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,18 +46,74 @@
   color: $white;
 }
 
-.heading-countdown {
-  line-height: 48px;
-  letter-spacing: 5px;
-  text-align: center;
-  // color: $white;
-  text-transform: uppercase;
 
-  @media only screen and (min-width: $desktop) {
-    text-align: left;
+.countdown {
+  
+  &__heading {
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-align: center;
+    // color: $white;
+    text-transform: uppercase;
+  
+    @media only screen and (min-width: $desktop) {
+      text-align: left;
+    }
   }
+  
+  &__heading span {
+    color: $blue;
+  }
+
+  &__timer-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+  }
+
+  &__timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // color: $white;
+    width: clamp(72px, 19.2vw, 19.2vw);
+    font-weight: 700;
+
+    // background: $dark-blue;
+    border-radius: 4px;
+    padding: 8px 0;
+
+    @media only screen and (min-width: $tablet) {
+      width: clamp(100px, 13.0208333333vw, 13.020833333vw);
+      gap: 6px;
+      padding: 23px 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      width: clamp(100px, 6.9444444444vw, 6.9444444444vw);
+      gap: 16px;
+    }
+  }
+
+  &__cd-time {
+    font-size: 32px;
+    line-height: 48px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 56px;
+    }
+  }
+
+  &__cd-label {
+    font-size: 12px;
+    line-height: 28px;
+    opacity: 0.5;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
+  }
+
 }
 
-.heading-countdown span {
-  color: $blue;
-}
+
