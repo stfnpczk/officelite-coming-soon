@@ -1,27 +1,71 @@
 .signup {
-    &__text {
-        text-align: center;
-    }
+  &__text {
+    text-align: center;
+  }
 
-    &__paragraph {
-        margin: 16px 0 64px;
-    }
+  &__paragraph {
+    margin: 16px 0 64px;
+  }
 
-    &__heading {
-        color: $dark-blue ;
-    }
-    
+  &__heading {
+    color: $dark-blue;
+  }
 
-    &__timer--light {
-        background-color: $blue;
-        background-color: rgba(#5175FF, 0.1);
-    }
+  &__timer--light {
+    background-color: $blue;
+    background-color: rgba(#5175ff, 0.1);
+  }
 
-    &__time {
-        color: $blue;
-    }
+  &__time {
+    color: $blue;
+  }
 
-    &__label {
-        color: $dark-blue;
-    }
+  &__label {
+    color: $dark-blue;
+  }
+}
+
+.form {
+  margin: 64px 0 0;
+  background: $white;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 24px;
+
+  &__input-container {
+    position: relative;
+    border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+  }
+
+  &__input {
+    border: none;
+    // border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+    width: 100%;
+    line-height: 28px;
+    padding: 24px 16px 17px;
+    // position: relative;
+    // display: block;
+    // margin-right: 16px;
+  }
+
+  &__error-icon {
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+    // bottom: 0;
+    width: unset;
+  }
+
+  &__select {
+    padding: 24px 16px 17px;
+    border-bottom: 1px solid rgba(116, 123, 149, 0.5);
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+    background: $blue;
+    margin: 40px 0 0;
+    color: $white;
+  }
 }
