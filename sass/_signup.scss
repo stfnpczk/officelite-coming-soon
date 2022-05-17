@@ -1,3 +1,25 @@
+body {
+  position: relative;
+}
+
+.page-wrapper-signup {
+  padding: 0 0 87px;
+}
+
+.page-wrapper-signup::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 320px;
+  // min-height: clamp(320px, 85.3333333333vw, 85.3333333333vw);
+  background: url(../assets/sign-up/bg-pattern-side.svg) no-repeat #25293a;
+  background-size: 1202px;
+  background-position: center top -408px;
+  z-index: -1;
+}
+
 .signup {
   &__text {
     text-align: center;

@@ -19,11 +19,11 @@
   display: flex;
   justify-content: center;
   // margin: 72px 0 80px 39px;
-  margin: 46px 0 75px;
+  padding: 46px 0 75px;
 
   @media only screen and (min-width: $tablet) {
     justify-content: flex-start;
-    margin: 72px 0 104px 39px;
+    padding: 72px 0 104px 39px;
   }
 
   &__logo {
@@ -31,7 +31,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 81px 165px 102px;
+    padding: 81px 165px 102px;
   }
 }
 
