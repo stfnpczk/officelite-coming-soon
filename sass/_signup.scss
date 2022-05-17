@@ -18,11 +18,22 @@ body {
   background-size: 1202px;
   background-position: center top -408px;
   z-index: -1;
+
+  @media only screen and (min-width: $tablet) {
+    min-height: 380px;
+    background-size: 1454px;
+    background-position: center top -537px;
+  }
 }
 
 .signup {
   &__text {
     text-align: center;
+
+    @media only screen and (min-width: $tablet) {
+      max-width: clamp(572px, 74.4791666667vw, 74.4791666667vw);
+      margin: 0 auto;
+    }
   }
 
   &__paragraph {
@@ -31,6 +42,15 @@ body {
 
   &__heading {
     color: $dark-blue;
+
+    
+  }
+
+  &__timer__boxes {
+    @media only screen and (min-width: $tablet) {
+      max-width: clamp(445px, 57.9427083333vw, 57.9427083333vw);
+      margin: 0 auto;
+    }
   }
 
   &__timer--light {
@@ -53,6 +73,11 @@ body {
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
   padding: 24px;
+
+  @media only screen and (min-width: $tablet) {
+    max-width: clamp(397px, 51.6927083333vw, 51.6927083333vw);
+    margin: 104px auto 0;
+  }
 
   &__input-container {
     position: relative;
