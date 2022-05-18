@@ -6,6 +6,20 @@ body {
   padding: 0 0 87px;
 }
 
+.header-signup::after {
+  display: none;
+}
+
+.main-signup {
+  // background-color: #5175ff;
+
+  @media only screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
 .page-wrapper-signup::after {
   content: '';
   position: absolute;
@@ -24,15 +38,33 @@ body {
     background-size: 1454px;
     background-position: center top -537px;
   }
+
+  @media only screen and (min-width: $desktop) {
+    // min-height: 1152px;
+    top: 0;
+    left: auto ;
+    width: 420px;
+    height: unset;
+    background-size: 2036px;
+    background-position: center top -781px;
+  }
 }
 
 .signup {
+  @media only screen and (min-width: $desktop) {
+    max-width: clamp(540px, 37.5vw, 37.5vw);
+  }
   &__text {
     text-align: center;
 
     @media only screen and (min-width: $tablet) {
       max-width: clamp(572px, 74.4791666667vw, 74.4791666667vw);
       margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      text-align: left;
+      margin: 0;
     }
   }
 
@@ -51,6 +83,10 @@ body {
       max-width: clamp(445px, 57.9427083333vw, 57.9427083333vw);
       margin: 0 auto;
     }
+
+    // @media only screen and (min-width: $desktop) {
+    //   justify-content: flex-start;
+    // }
   }
 
   &__timer--light {
@@ -77,6 +113,11 @@ body {
   @media only screen and (min-width: $tablet) {
     max-width: clamp(397px, 51.6927083333vw, 51.6927083333vw);
     margin: 104px auto 0;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin: 0;
+    flex: 0 0 35.77%;
   }
 
   &__input-container {
