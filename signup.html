@@ -13,6 +13,7 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="./main.js" defer=""></script>
   </head>
   <body>
     <div class="page-wrapper-signup">
@@ -35,24 +36,24 @@
 
             <div class="signup__countdown">
               <h2 class="countdown__heading signup__heading">
-                Coming <span> 4 Nov 2020</span>
+                Coming <span> 4 Nov 2022</span>
               </h2>
 
               <ul class="countdown__timer-boxes signup__timer-boxes">
                 <li class="countdown__timer signup__timer--light">
-                  <span class="countdown__cd-time signup__time">47</span>
+                  <span class="countdown__cd-time signup__time js-days"></span>
                   <span class="countdown__cd-label signup__label">days</span>
                 </li>
                 <li class="countdown__timer signup__timer--light">
-                  <span class="countdown__cd-time signup__time">07</span>
+                  <span class="countdown__cd-time signup__time js-hours"></span>
                   <span class="countdown__cd-label signup__label">hours</span>
                 </li>
                 <li class="countdown__timer signup__timer--light">
-                  <span class="countdown__cd-time signup__time">56</span>
+                  <span class="countdown__cd-time signup__time js-min"></span>
                   <span class="countdown__cd-label signup__label">min</span>
                 </li>
                 <li class="countdown__timer signup__timer--light">
-                  <span class="countdown__cd-time signup__time">14</span>
+                  <span class="countdown__cd-time signup__time js-sec"></span>
                   <span class="countdown__cd-label signup__label">sec</span>
                 </li>
               </ul>
@@ -80,7 +81,7 @@
               class="form__input"
               type="text"
               placeholder="Email"
-              id="name"
+              id="email"
             />
             <img
               class="form__error-icon"
@@ -100,7 +101,7 @@
               class="form__input"
               type="text"
               placeholder="Phone Number"
-              id="name"
+              id="phone"
             />
             <img
               class="form__error-icon"
@@ -114,7 +115,7 @@
               class="form__input"
               type="text"
               placeholder="Company"
-              id="name"
+              id="company"
             />
             <img
               class="form__error-icon"
