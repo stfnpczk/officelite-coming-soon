@@ -23,7 +23,7 @@
 .card {
   border-radius: 13px;
   padding: 40px 0;
-  
+
   @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,21 +46,19 @@
   color: $white;
 }
 
-
 .countdown {
-  
   &__heading {
     line-height: 48px;
     letter-spacing: 5px;
     text-align: center;
     // color: $white;
     text-transform: uppercase;
-  
+
     @media only screen and (min-width: $desktop) {
       text-align: left;
     }
   }
-  
+
   &__heading span {
     color: $blue;
   }
@@ -117,7 +115,4 @@
       font-size: 16px;
     }
   }
-
 }
-
-

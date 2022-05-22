@@ -16,12 +16,11 @@ body {
   @media only screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-
   }
 }
 
 .page-wrapper-signup::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -42,7 +41,7 @@ body {
   @media only screen and (min-width: $desktop) {
     // min-height: 1152px;
     top: 0;
-    left: auto ;
+    left: auto;
     width: 420px;
     height: unset;
     background-size: 2036px;
@@ -74,8 +73,6 @@ body {
 
   &__heading {
     color: $dark-blue;
-
-    
   }
 
   &__timer__boxes {
@@ -96,6 +93,11 @@ body {
 
   &__time {
     color: $blue;
+  }
+
+  &__time--sec {
+    // width: clamp(40px, 10.6666666667vw, 10.6666666667vw);
+    // margin: 0 auto;
   }
 
   &__label {
@@ -156,4 +158,24 @@ body {
     margin: 40px 0 0;
     color: $white;
   }
+}
+
+.form__input-container .form__error-icon {
+  display: none;
+}
+
+.form__input-container.error .form__error-icon {
+  display: block;
+  position: absolute;
+  bottom: 22px;
+  right: 0;
+  width: unset;
+}
+
+.form__input-container.error {
+  border-color: $red;
+}
+
+.form__input-container.error input {
+  color: $red;
 }
