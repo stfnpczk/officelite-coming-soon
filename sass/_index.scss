@@ -1,7 +1,20 @@
 /*----------------------------
       layout
  ----------------------------*/
- main {
+.body-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: $tablet) {
+    display: unset;
+  }
+  @media only screen and (min-width: 1650px) {
+    display: flex;
+  }
+}
+
+ .main-index {
   padding: 0 24px;
 
   @media only screen and (min-width: $tablet) {
@@ -15,6 +28,22 @@
 
   @media only screen and (min-width: 1440px) {
     padding: 0 165px;
+  }
+}
+
+.page-wrapper {
+  max-width: 500px;
+
+  @media only screen and (min-width: $tablet) {
+    max-width: 850px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    max-width: unset;
+  }
+
+  @media only screen and (min-width: 1650px) {
+    max-width: 1650px;
   }
 }
 /*----------------------------
@@ -125,7 +154,7 @@
 
   &__button {
     background: #5175ff;
-    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    box-shadow: 0px 25px 25px -10px rgba(153, 165, 211, 0.247);
 
     color: $white;
     margin: 24px 0 100px;
@@ -168,7 +197,6 @@
 
     @media only screen and (min-width: $desktop) {
       background-position: center top -379px;
-      
     }
   }
 
@@ -261,7 +289,7 @@
     // letter-spacing: 5px;
     // text-align: center;
     // text-transform: uppercase;
-    
+
     color: $white;
     // @media only screen and (min-width: $desktop) {
     //   text-align: left;
@@ -284,7 +312,7 @@
     // display: flex;
     // flex-direction: column;
     // align-items: center;
-    // // 
+    // //
     // width: clamp(72px, 19.2vw, 19.2vw);
     // font-weight: 700;
     // //

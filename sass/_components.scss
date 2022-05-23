@@ -78,7 +78,8 @@
     flex-direction: column;
     align-items: center;
     // color: $white;
-    width: clamp(72px, 19.2vw, 19.2vw);
+    // width: clamp(72px, 19.2vw, 19.2vw);
+    width: clamp(72px, 19.2vw, 92px);
     font-weight: 700;
 
     // background: $dark-blue;
