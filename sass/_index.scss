@@ -163,6 +163,10 @@
       margin: 24px 0 140px;
     }
   }
+
+  &__button:hover {
+    background-color: #829CFF;
+  }
 }
 
 /*----------------------------
@@ -261,8 +265,18 @@
     background-color: rgba(81, 117, 255, 0.15);
   }
 
+  &__button:hover {
+    background-color: rgba(81, 117, 255, 0.5);
+
+  }
+
   &__button--white {
     background-color: white;
+  }
+
+  &__button--white:hover {
+    background-color: white;
+    color: rgba(130, 156, 255, 1);
   }
 }
 /*----------------------------
@@ -353,6 +367,10 @@
   &__button {
     color: $white;
     background: $blue;
+  }
+
+  &__button:hover {
+    background-color: rgb(130, 156, 255);
   }
 }
 

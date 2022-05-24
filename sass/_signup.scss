@@ -2,6 +2,13 @@ body {
   // display: flex;
   // flex-direction: column;
   // align-items: center;
+
+
+  @media only screen and (min-width: 1700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 // .page-wrapper-signup {
@@ -27,13 +34,18 @@ body {
   }
 
   @media only screen and (min-width: $desktop) {
-    padding: 0 165px;
+    padding: 0 clamp(116px, 11.328125vw, 165px);
   }
 
   @media only screen and (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+  }
+
+
+  @media only screen and (min-width: 1700px) {
+    max-width: 1700px;
   }
 }
 
@@ -175,6 +187,10 @@ body {
     background: $blue;
     margin: 40px 0 0;
     color: $white;
+  }
+
+  &__button:hover {
+    background-color: rgba(130, 156, 255, 1);
   }
 }
 
