@@ -36,7 +36,7 @@ const countdown = setInterval(() => {
   }, 1000);
 
 // form validation
-const form = document.getElementById("form");
+const form = document.getElementById("form-js");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
@@ -66,8 +66,7 @@ const checkEmail = (input) => {
 const displayError = (input) => {
   const inputContainer = input.parentElement;
   inputContainer.classList = "form__input-container error";
-  // const message = inputContainer.querySelector("small");
-  // message.innerText = errorMessage;
+  
 };
 
 const removeError = (input) => {
