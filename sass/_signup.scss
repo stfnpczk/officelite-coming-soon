@@ -1,36 +1,44 @@
 body {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-
-
+  @media only screen and (min-width: $desktop) {
+  }
   @media only screen and (min-width: 1700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+}
+.body-signup:after {
+  @media only screen and (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: auto;
+    background: url(../assets/sign-up/bg-pattern-side.svg) no-repeat #25293a;
+    width: 420px;
+    height: unset;
+    background-size: 2036px;
+    background-position: center top -781px;
+    z-index: -1;
+  }
 }
 
-// .page-wrapper-signup {
-//   padding: 0 0 87px;
-//   max-width: 500px;
-
-//   @media only screen and (min-width: $tablet) {
-//     max-width: 850px;
-//   }
-
-// }
+.page-wrapper-signup {
+  position: relative;
+}
 
 .header-signup::after {
   display: none;
 }
 
 .main-signup {
-  // background-color: #5175ff;
-  padding: 0 24px;
+  padding: 0 24px 100px;
 
   @media only screen and (min-width: $tablet) {
-    padding: 0 40px;
+    padding: 0 40px 126px;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -42,7 +50,6 @@ body {
     justify-content: space-between;
     gap: 100px;
   }
-
 
   @media only screen and (min-width: 1700px) {
     max-width: 1700px;
@@ -56,7 +63,6 @@ body {
   left: 0;
   right: 0;
   min-height: 320px;
-  // min-height: clamp(320px, 85.3333333333vw, 85.3333333333vw);
   background: url(../assets/sign-up/bg-pattern-side.svg) no-repeat #25293a;
   background-size: 1202px;
   background-position: center top -408px;
@@ -69,13 +75,13 @@ body {
   }
 
   @media only screen and (min-width: $desktop) {
-    // min-height: 1152px;
-    top: 0;
-    left: auto;
-    width: 420px;
-    height: unset;
-    background-size: 2036px;
-    background-position: center top -781px;
+    // top: 0;
+    // left: auto;
+    // width: 420px;
+    // height: unset;
+    // background-size: 2036px;
+    // background-position: center top -781px;
+    display: none;
   }
 }
 
@@ -110,10 +116,6 @@ body {
       max-width: clamp(445px, 57.9427083333vw, 57.9427083333vw);
       margin: 0 auto;
     }
-
-    // @media only screen and (min-width: $desktop) {
-    //   justify-content: flex-start;
-    // }
   }
 
   &__timer--light {
@@ -123,11 +125,6 @@ body {
 
   &__time {
     color: $blue;
-  }
-
-  &__time--sec {
-    // width: clamp(40px, 10.6666666667vw, 10.6666666667vw);
-    // margin: 0 auto;
   }
 
   &__label {
@@ -159,20 +156,15 @@ body {
 
   &__input {
     border: none;
-    // border-bottom: 1px solid rgba(116, 123, 149, 0.5);
     width: 100%;
     line-height: 28px;
     padding: 24px 16px 17px;
-    // position: relative;
-    // display: block;
-    // margin-right: 16px;
   }
 
   &__error-icon {
     position: absolute;
     bottom: 22px;
     right: 0;
-    // bottom: 0;
     width: unset;
   }
 

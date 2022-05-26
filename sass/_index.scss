@@ -14,7 +14,7 @@
   }
 }
 
- .main-index {
+.main-index {
   padding: 0 24px;
 
   @media only screen and (min-width: $tablet) {
@@ -23,7 +23,6 @@
 
   @media only screen and (min-width: $desktop) {
     padding: 0 24px;
-    // padding: 0 clamp(25px, 2.44140625vw, 165px);
   }
 
   @media only screen and (min-width: 1440px) {
@@ -36,6 +35,7 @@
 
   @media only screen and (min-width: $tablet) {
     max-width: 850px;
+    margin: 0 auto;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -52,7 +52,6 @@
 .header {
   display: flex;
   justify-content: center;
-  // margin: 72px 0 80px 39px;
   padding: 46px 0 75px;
 
   @media only screen and (min-width: $tablet) {
@@ -118,17 +117,12 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      // width: clamp(526px, 36.5277777778vw, 36.5277777778vw);
       width: clamp(475px, 32.9861111111vw, 32.9861111111vw);
       margin: 0;
-      // transform: translateX(24px);
     }
   }
 
   &__heading {
-    // font-family: Kumbh Sans;
-    // font-size: 40px;
-    // line-height: 48px;
     margin: 64px 0 24px;
 
     @media only screen and (min-width: $tablet) {
@@ -136,8 +130,6 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      // font-size: 56px;
-      // line-height: 64px;
       margin: 72px 0 24px;
     }
   }
@@ -165,7 +157,7 @@
   }
 
   &__button:hover {
-    background-color: #829CFF;
+    background-color: #829cff;
   }
 }
 
@@ -205,7 +197,6 @@
   }
 
   &__ultimate {
-    // box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
     border-radius: 13px;
     background: $white;
   }
@@ -232,8 +223,6 @@
   }
 
   &__per-user {
-    // font-size: 16px;
-    // line-height: 28px;
     color: $dark-blue;
   }
 
@@ -267,7 +256,6 @@
 
   &__button:hover {
     background-color: rgba(81, 117, 255, 0.5);
-
   }
 
   &__button--white {
@@ -297,72 +285,13 @@
   }
 
   &__heading {
-    // font-family: Kumbh Sans;
-    // font-size: 16px;
-    // line-height: 48px;
-    // letter-spacing: 5px;
-    // text-align: center;
-    // text-transform: uppercase;
-
     color: $white;
-    // @media only screen and (min-width: $desktop) {
-    //   text-align: left;
-    // }
   }
-
-  // &__heading span {
-  //   color: $blue;
-  // }
-
-  // &__timer-boxes {
-  //   display: flex;
-  //   justify-content: center;
-  //   gap: 13px;
-  // }
 
   &__timer {
     color: $white;
     background: $dark-blue;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // //
-    // width: clamp(72px, 19.2vw, 19.2vw);
-    // font-weight: 700;
-    // //
-    // border-radius: 4px;
-    // padding: 8px 0;
-
-    // @media only screen and (min-width: $tablet) {
-    //   width: clamp(100px, 13.0208333333vw, 13.020833333vw);
-    //   gap: 6px;
-    //   padding: 23px 0;
-    // }
-
-    // @media only screen and (min-width: $desktop) {
-    //   width: clamp(100px, 6.9444444444vw, 6.9444444444vw);
-    //   gap: 16px;
-    // }
   }
-
-  // &__cd-time {
-  //   font-size: 32px;
-  //   line-height: 48px;
-
-  //   @media only screen and (min-width: $tablet) {
-  //     font-size: 56px;
-  //   }
-  // }
-
-  // &__cd-label {
-  //   font-size: 12px;
-  //   line-height: 28px;
-  //   opacity: 0.5;
-
-  //   @media only screen and (min-width: $desktop) {
-  //     font-size: 16px;
-  //   }
-  // }
 
   &__button {
     color: $white;

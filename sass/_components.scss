@@ -11,15 +11,9 @@
   line-height: 28px;
   transition: 0.3s ease-in;
 
-  // color: $white;
-
   @media only screen and (min-width: $tablet) {
     width: 171px;
   }
-
-  // @media only screen and (min-width: $desktop) {
-  //   margin: 32px 0 0;
-  // }
 }
 
 .card {
@@ -37,7 +31,6 @@
   @media only screen and (min-width: $desktop) {
     grid-template-columns: 1fr;
     width: clamp(350px, 24.3055555556vw, 24.3055555556vw);
-    // width: 350px;
     padding: 40px 0;
     text-align: center;
     justify-items: center;
@@ -53,7 +46,6 @@
     line-height: 48px;
     letter-spacing: 5px;
     text-align: center;
-    // color: $white;
     text-transform: uppercase;
 
     @media only screen and (min-width: $desktop) {
@@ -79,12 +71,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // color: $white;
-    // width: clamp(72px, 19.2vw, 19.2vw);
     width: clamp(72px, 19.2vw, 92px);
     font-weight: 700;
 
-    // background: $dark-blue;
     border-radius: 4px;
     padding: 8px 0;
 

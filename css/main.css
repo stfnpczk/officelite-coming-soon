@@ -495,6 +495,7 @@ a {
 @media only screen and (min-width: 768px) {
   .page-wrapper {
     max-width: 850px;
+    margin: 0 auto;
   }
 }
 
@@ -662,7 +663,7 @@ a {
 }
 
 .hero__button:hover {
-  background-color: #829CFF;
+  background-color: #829cff;
 }
 
 /*----------------------------
@@ -1040,17 +1041,39 @@ a {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .body-signup:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: auto;
+    background: url(../assets/sign-up/bg-pattern-side.svg) no-repeat #25293a;
+    width: 420px;
+    height: unset;
+    background-size: 2036px;
+    background-position: center top -781px;
+    z-index: -1;
+  }
+}
+
+.page-wrapper-signup {
+  position: relative;
+}
+
 .header-signup::after {
   display: none;
 }
 
 .main-signup {
-  padding: 0 24px;
+  padding: 0 24px 100px;
 }
 
 @media only screen and (min-width: 768px) {
   .main-signup {
-    padding: 0 40px;
+    padding: 0 40px 126px;
   }
 }
 
@@ -1101,12 +1124,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .page-wrapper-signup::after {
-    top: 0;
-    left: auto;
-    width: 420px;
-    height: unset;
-    background-size: 2036px;
-    background-position: center top -781px;
+    display: none;
   }
 }
 
